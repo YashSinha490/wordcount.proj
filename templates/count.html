@@ -1,0 +1,10 @@
+<h1>YOUR TEXT IS:-</h1>
+<a href="{% url 'home'%}">Start Again</a>
+<br>
+{{textbox}}
+<h1>YOUR TEXT HAS A TOTAL OF {{countwords}} WORDS</h1>
+<h1>THE WORD COUNTS ARE AS FOLLOWS:-</h1>
+{%for i,j in sorteddic%}
+{{i}}-{{j}}
+<br />
+{%endfor%}
